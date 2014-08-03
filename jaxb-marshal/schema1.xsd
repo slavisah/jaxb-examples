@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="EXHIBITION" type="exhibition"/>
+
+  <xs:element name="MUSEUM" type="museum"/>
+
+  <xs:element name="MUSEUMS" type="museums"/>
+
+  <xs:complexType name="museum">
+    <xs:sequence>
+      <xs:element name="CITY" type="xs:string" minOccurs="0"/>
+      <xs:element name="MUSEUM_NAME" type="xs:string" minOccurs="0"/>
+      <xs:element name="PERMANENT_EXHIBITION" type="exhibition" minOccurs="0"/>
+      <xs:element name="SPECIAL_EXHIBITION" type="exhibition" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="children_allowed" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="exhibition">
+    <xs:sequence>
+      <xs:element name="NAME" type="xs:string" minOccurs="0"/>
+      <xs:element name="ARTIST" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="FROM" type="xs:string" minOccurs="0"/>
+      <xs:element name="TO" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="museums">
+    <xs:sequence>
+      <xs:element ref="MUSEUM" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
