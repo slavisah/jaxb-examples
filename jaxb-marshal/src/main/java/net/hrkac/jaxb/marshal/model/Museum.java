@@ -3,8 +3,10 @@ package net.hrkac.jaxb.marshal.model;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name = "MUSEUM")
+@XmlType(name = "MuseumType")
+@XmlRootElement(name = "Museum")
 public class Museum {
 
     private String name;
@@ -17,7 +19,7 @@ public class Museum {
         return name;
     }
 
-    @XmlElement(name = "MUSEUM_NAME")
+    @XmlElement(name = "MuseumName")
     public void setName(String name) {
         this.name = name;
     }
@@ -26,7 +28,7 @@ public class Museum {
         return childrenAllowed;
     }
 
-    @XmlAttribute(name = "children_allowed")
+    @XmlAttribute(name = "childrenAllowed")
     public void setChildrenAllowed(Boolean childrenAllowed) {
         this.childrenAllowed = childrenAllowed;
     }
@@ -35,7 +37,7 @@ public class Museum {
         return special;
     }
 
-    @XmlElement(name = "SPECIAL_EXHIBITION")
+    @XmlElement(name = "SpecialExhibition")
     public void setSpecial(Exhibition special) {
         this.special = special;
     }
@@ -44,7 +46,7 @@ public class Museum {
         return permanent;
     }
 
-    @XmlElement(name = "PERMANENT_EXHIBITION")
+    @XmlElement(name = "PermanentExhibition")
     public void setPermanent(Exhibition permanent) {
         this.permanent = permanent;
     }
@@ -53,7 +55,7 @@ public class Museum {
         return city;
     }
 
-    @XmlElement(name = "CITY")
+    @XmlElement(name = "City")
     public void setCity(String city) {
         this.city = city;
     }

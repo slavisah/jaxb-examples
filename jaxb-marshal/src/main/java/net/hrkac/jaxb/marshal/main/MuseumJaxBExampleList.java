@@ -42,7 +42,7 @@ public class MuseumJaxBExampleList {
              * marshaling of java objects in xml (output to file and standard
              * output)
              */
-            jaxbMarshaller.marshal(listOfMuseums, new File("list.xml"));
+            jaxbMarshaller.marshal(listOfMuseums, new File("files/list.xml"));
             jaxbMarshaller.marshal(listOfMuseums, System.out);
 
         } catch (JAXBException e) {

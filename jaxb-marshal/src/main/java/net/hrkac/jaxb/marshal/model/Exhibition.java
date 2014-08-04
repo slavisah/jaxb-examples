@@ -17,8 +17,8 @@ import net.hrkac.jaxb.marshal.adapter.DateAdapter;
  * 
  */
 // field name and not xml element name
-@XmlType(propOrder = { "name", "artists", "from", "to" })
-@XmlRootElement(name = "EXHIBITION")
+@XmlType(name = "ExhibitionType", propOrder = { "name", "artists", "from", "to" })
+@XmlRootElement(name = "Exhibition")
 public class Exhibition {
 
     private String name;
@@ -34,7 +34,7 @@ public class Exhibition {
     }
 
     // name to be used in the xml
-    @XmlElement(name = "NAME")
+    @XmlElement(name = "Name")
     public void setName(String name) {
         this.name = name;
     }
@@ -47,7 +47,7 @@ public class Exhibition {
      * indicates JaxB what adapter it should use to manage this field
      */
     @XmlJavaTypeAdapter(DateAdapter.class)
-    @XmlElement(name = "FROM")
+    @XmlElement(name = "From")
     public void setFrom(Date from) {
         this.from = from;
     }
@@ -60,7 +60,7 @@ public class Exhibition {
      * indicates JaxB what adapter it should use to manage this field
      */
     @XmlJavaTypeAdapter(DateAdapter.class)
-    @XmlElement(name = "TO")
+    @XmlElement(name = "To")
     public void setTo(Date to) {
         this.to = to;
     }
@@ -69,7 +69,7 @@ public class Exhibition {
         return artists;
     }
 
-    @XmlElement(name = "ARTIST")
+    @XmlElement(name = "Artist")
     public void setArtists(List<String> artists) {
         this.artists = artists;
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<MUSEUM children_allowed="false">
-    <CITY>Oviedo, Spain</CITY>
-    <MUSEUM_NAME>Simple Museum</MUSEUM_NAME>
-</MUSEUM>
+<Museum childrenAllowed="false">
+    <City>Oviedo, Spain</City>
+    <MuseumName>Simple Museum</MuseumName>
+</Museum>

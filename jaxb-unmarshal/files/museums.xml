@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Museums>
+	<Museum childrenAllowed="false">
+		<City>Madrid</City>
+		<MuseumName>Reina Sofia Museum</MuseumName>
+		<PermanentExhibition>
+			<Name>Permanent Exhibition - Reina Sofia Museum</Name>
+			<Artist>Picasso</Artist>
+			<Artist>Dali</Artist>
+			<Artist>Miro</Artist>
+			<From>1900-01-01</From>
+			<To>2014-12-31</To>
+		</PermanentExhibition>
+	</Museum>
+	<Museum>
+		<City>Paris</City>
+		<MuseumName>Louvre Museum</MuseumName>
+		<PermanentExhibition>
+			<Name>Permanent Exhibition - Louvre Museum</Name>
+			<Artist>Leonardo da Vinci</Artist>
+			<Artist>Caravaggio</Artist>
+			<Artist>Delacroix</Artist>
+		</PermanentExhibition>
+	</Museum>
+</Museums>

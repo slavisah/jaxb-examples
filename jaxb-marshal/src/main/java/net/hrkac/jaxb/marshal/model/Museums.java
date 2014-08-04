@@ -5,12 +5,14 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  * JaxB is not capable of marshal lists directly as root elements, so we need a
  * container for the list of museums. Getter and Setter are used by jaxb
  */
-@XmlRootElement(name = "MUSEUMS")
+@XmlType(name = "MuseumsType")
+@XmlRootElement(name = "Museums")
 public class Museums {
     
     List<Museum> museums;
@@ -22,7 +24,7 @@ public class Museums {
     /**
      * element that is going to be marshaled in the xml
      */
-    @XmlElement(name = "MUSEUM")
+    @XmlElement(name = "Museum")
     public void setMuseums(List<Museum> museums) {
         this.museums = museums;
     }

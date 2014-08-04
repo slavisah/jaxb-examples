@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:element name="EXHIBITION" type="exhibition"/>
+  <xs:element name="Exhibition" type="ExhibitionType"/>
 
-  <xs:element name="MUSEUM" type="museum"/>
+  <xs:element name="Museum" type="MuseumType"/>
 
-  <xs:element name="MUSEUMS" type="museums"/>
+  <xs:element name="Museums" type="MuseumsType"/>
 
-  <xs:complexType name="museum">
+  <xs:complexType name="MuseumType">
     <xs:sequence>
-      <xs:element name="CITY" type="xs:string" minOccurs="0"/>
-      <xs:element name="MUSEUM_NAME" type="xs:string" minOccurs="0"/>
-      <xs:element name="PERMANENT_EXHIBITION" type="exhibition" minOccurs="0"/>
-      <xs:element name="SPECIAL_EXHIBITION" type="exhibition" minOccurs="0"/>
+      <xs:element name="City" type="xs:string" minOccurs="0"/>
+      <xs:element name="MuseumName" type="xs:string" minOccurs="0"/>
+      <xs:element name="PermanentExhibition" type="ExhibitionType" minOccurs="0"/>
+      <xs:element name="SpecialExhibition" type="ExhibitionType" minOccurs="0"/>
     </xs:sequence>
-    <xs:attribute name="children_allowed" type="xs:boolean"/>
+    <xs:attribute name="childrenAllowed" type="xs:boolean"/>
   </xs:complexType>
 
-  <xs:complexType name="exhibition">
+  <xs:complexType name="ExhibitionType">
     <xs:sequence>
-      <xs:element name="NAME" type="xs:string" minOccurs="0"/>
-      <xs:element name="ARTIST" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:element name="FROM" type="xs:string" minOccurs="0"/>
-      <xs:element name="TO" type="xs:string" minOccurs="0"/>
+      <xs:element name="Name" type="xs:string" minOccurs="0"/>
+      <xs:element name="Artist" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="From" type="xs:string" minOccurs="0"/>
+      <xs:element name="To" type="xs:string" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 
-  <xs:complexType name="museums">
+  <xs:complexType name="MuseumsType">
     <xs:sequence>
-      <xs:element ref="MUSEUM" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element ref="Museum" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
