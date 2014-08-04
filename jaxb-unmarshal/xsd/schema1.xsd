@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:element name="Exhibition" type="ExhibitionType"/>
-
-  <xs:element name="Museum" type="MuseumType"/>
-
-  <xs:element name="Museums" type="MuseumsType"/>
+  <xs:element name="Museums">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Museum" type="MuseumType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 
   <xs:complexType name="MuseumType">
     <xs:sequence>
-      <xs:element name="City" type="xs:string" minOccurs="0"/>
       <xs:element name="MuseumName" type="xs:string" minOccurs="0"/>
+      <xs:element name="City" type="xs:string" minOccurs="0"/>
       <xs:element name="PermanentExhibition" type="ExhibitionType" minOccurs="0"/>
       <xs:element name="SpecialExhibition" type="ExhibitionType" minOccurs="0"/>
     </xs:sequence>
@@ -23,12 +25,6 @@
       <xs:element name="Artist" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="From" type="xs:string" minOccurs="0"/>
       <xs:element name="To" type="xs:string" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="MuseumsType">
-    <xs:sequence>
-      <xs:element ref="Museum" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

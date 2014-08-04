@@ -18,7 +18,6 @@ import net.hrkac.jaxb.marshal.adapter.DateAdapter;
  */
 // field name and not xml element name
 @XmlType(name = "ExhibitionType", propOrder = { "name", "artists", "from", "to" })
-@XmlRootElement(name = "Exhibition")
 public class Exhibition {
 
     private String name;

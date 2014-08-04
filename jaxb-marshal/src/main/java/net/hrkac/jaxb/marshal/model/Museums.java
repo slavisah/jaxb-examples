@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlType;
  * JaxB is not capable of marshal lists directly as root elements, so we need a
  * container for the list of museums. Getter and Setter are used by jaxb
  */
-@XmlType(name = "MuseumsType")
+@XmlType(name = "")
 @XmlRootElement(name = "Museums")
 public class Museums {
     

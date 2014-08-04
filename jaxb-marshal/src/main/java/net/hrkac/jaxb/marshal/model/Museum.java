@@ -5,8 +5,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(name = "MuseumType")
-@XmlRootElement(name = "Museum")
+@XmlType(name = "MuseumType", propOrder = { "name", "city", "permanent", "special" })
 public class Museum {
 
     private String name;
