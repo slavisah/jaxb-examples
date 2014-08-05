@@ -1,4 +1,4 @@
-package net.hrkac.jaxb.unmarshal;
+package net.hrkac.jaxb.dozer;
 
 /**
  * Hello world!

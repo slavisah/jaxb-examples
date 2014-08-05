@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <configuration>
+        <stop-on-errors>true</stop-on-errors>
+        <date-format>MM/dd/yyyy HH:mm:ss</date-format>
+        <wildcard>true</wildcard>
+    </configuration>
+
+    <mapping>
+        <class-a>net.hrkac.jaxb.dozer.domain.Address</class-a>
+        <class-b>net.hrkac.jaxb.dozer.generated.AddressType</class-b>
+        <field>
+            <a>street1</a>
+            <b>streetAddress1</b>
+        </field>
+        <field>
+            <a>street2</a>
+            <b>streetAddress2</b>
+        </field>
+    </mapping>
+    
+    <mapping>
+        <class-a>net.hrkac.jaxb.dozer.domain.Person</class-a>
+        <class-b>net.hrkac.jaxb.dozer.generated.PersonType</class-b>
+    </mapping>
+
+</mappings>

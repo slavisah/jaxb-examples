@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:marx="http://marxsoftware.blogspot.com/"
+           targetNamespace="http://marxsoftware.blogspot.com/"
+           elementFormDefault="qualified">
+   
+   <xs:element name="Person" type="marx:PersonType" />
+   
+   <xs:complexType name="PersonType">
+      <xs:sequence>
+         <xs:element name="MailingAddress" type="marx:AddressType" />
+         <xs:element name="ResidentialAddress" type="marx:AddressType" minOccurs="0" />
+      </xs:sequence>
+      <xs:attribute name="firstName" type="xs:string" />
+      <xs:attribute name="lastName" type="xs:string" />
+   </xs:complexType>
+   
+   <xs:complexType name="AddressType">
+      <xs:attribute name="streetAddress1" type="xs:string" use="required" />
+      <xs:attribute name="streetAddress2" type="xs:string" use="optional" />
+      <xs:attribute name="city" type="xs:string" use="required" />
+      <xs:attribute name="state" type="xs:string" use="required" />
+      <xs:attribute name="zipcode" type="xs:string" use="required" />
+   </xs:complexType>
+   
+</xs:schema>
