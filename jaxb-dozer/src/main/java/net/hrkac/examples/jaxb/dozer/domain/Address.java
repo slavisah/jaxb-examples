@@ -1,5 +1,8 @@
 package net.hrkac.examples.jaxb.dozer.domain;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 public class Address {
     
     private String street1;
@@ -39,4 +42,8 @@ public class Address {
         this.zipcode = zipcode;
     }
     
+    @Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+	}
 }

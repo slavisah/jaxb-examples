@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sh:Person xmlns:sh="http://hrkac.net/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hrkac.net/ person.xsd ">
+  <sh:MailingAddress city="Zagreb" state="Grad Zagreb" streetAddress1="Savska 10" zipcode="10000"/>
+  <sh:ResidentialAddress city="Split" state="Splitsko-dalmatinska" streetAddress1="Marmontova 2" zipcode="21000"/>
+</sh:Person>

@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:marx="http://marxsoftware.blogspot.com/"
-           targetNamespace="http://marxsoftware.blogspot.com/"
+           xmlns:sh="http://hrkac.net/"
+           targetNamespace="http://hrkac.net/"
            elementFormDefault="qualified">
    
-   <xs:element name="Person" type="marx:PersonType" />
+   <xs:element name="Person" type="sh:PersonType" />
    
    <xs:complexType name="PersonType">
       <xs:sequence>
-         <xs:element name="MailingAddress" type="marx:AddressType" />
-         <xs:element name="ResidentialAddress" type="marx:AddressType" minOccurs="0" />
+         <xs:element name="MailingAddress" type="sh:AddressType" />
+         <xs:element name="ResidentialAddress" type="sh:AddressType" minOccurs="0" />
       </xs:sequence>
       <xs:attribute name="firstName" type="xs:string" />
       <xs:attribute name="lastName" type="xs:string" />
