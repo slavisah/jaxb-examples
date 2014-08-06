@@ -9,8 +9,8 @@
     </configuration>
 
     <mapping>
-        <class-a>net.hrkac.jaxb.dozer.domain.Address</class-a>
-        <class-b>net.hrkac.jaxb.dozer.generated.AddressType</class-b>
+        <class-a>net.hrkac.examples.jaxb.dozer.domain.Address</class-a>
+        <class-b>net.hrkac.examples.jaxb.dozer.generated.AddressType</class-b>
         <field>
             <a>street1</a>
             <b>streetAddress1</b>
@@ -22,8 +22,8 @@
     </mapping>
     
     <mapping>
-        <class-a>net.hrkac.jaxb.dozer.domain.Person</class-a>
-        <class-b>net.hrkac.jaxb.dozer.generated.PersonType</class-b>
+        <class-a>net.hrkac.examples.jaxb.dozer.domain.Person</class-a>
+        <class-b>net.hrkac.examples.jaxb.dozer.generated.PersonType</class-b>
     </mapping>
 
 </mappings>

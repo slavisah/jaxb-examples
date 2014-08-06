@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Museums>
     <Museum>
-        <City>Madrid</City>
         <MuseumName>Prado Museum</MuseumName>
+        <City>Madrid</City>
         <PermanentExhibition>
             <Name>Permanent Exhibition - Prado Museum</Name>
             <Artist>Velazquez</Artist>
@@ -20,8 +20,8 @@
         </SpecialExhibition>
     </Museum>
     <Museum>
-        <City>Madrid</City>
         <MuseumName>Reina Sofia Museum</MuseumName>
+        <City>Madrid</City>
         <PermanentExhibition>
             <Name>Permanent Exhibition - Reina Sofia Museum</Name>
             <Artist>Picasso</Artist>
