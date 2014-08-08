@@ -1,27 +1,25 @@
 <?xml version="1.0"?>
-<xs:schema version="1.0"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:sh="http://hrkac.net/"
-           targetNamespace="http://hrkac.net/"
-           elementFormDefault="qualified">
-   
-   <xs:element name="Person" type="sh:PersonType" />
-   
-   <xs:complexType name="PersonType">
-      <xs:sequence>
-         <xs:element name="MailingAddress" type="sh:AddressType" />
-         <xs:element name="ResidentialAddress" type="sh:AddressType" minOccurs="0" />
-      </xs:sequence>
-      <xs:attribute name="firstName" type="xs:string" />
-      <xs:attribute name="lastName" type="xs:string" />
-   </xs:complexType>
-   
-   <xs:complexType name="AddressType">
-      <xs:attribute name="streetAddress1" type="xs:string" use="required" />
-      <xs:attribute name="streetAddress2" type="xs:string" use="optional" />
-      <xs:attribute name="city" type="xs:string" use="required" />
-      <xs:attribute name="state" type="xs:string" use="required" />
-      <xs:attribute name="zipcode" type="xs:string" use="required" />
-   </xs:complexType>
-   
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:sh="http://hrkac.net/" targetNamespace="http://hrkac.net/"
+	elementFormDefault="qualified">
+
+	<xs:element name="PersonMessage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MailingAddress" type="sh:AddressType" />
+				<xs:element name="ResidentialAddress" type="sh:AddressType" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="firstName" type="xs:string" />
+			<xs:attribute name="lastName" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="AddressType">
+		<xs:attribute name="streetAddress1" type="xs:string" use="required" />
+		<xs:attribute name="streetAddress2" type="xs:string" use="optional" />
+		<xs:attribute name="city" type="xs:string" use="required" />
+		<xs:attribute name="state" type="xs:string" use="required" />
+		<xs:attribute name="zipcode" type="xs:string" use="required" />
+	</xs:complexType>
+
 </xs:schema>

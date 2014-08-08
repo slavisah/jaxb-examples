@@ -23,7 +23,7 @@
     
     <mapping>
         <class-a>net.hrkac.examples.jaxb.dozer.domain.Person</class-a>
-        <class-b>net.hrkac.examples.jaxb.dozer.generated.PersonType</class-b>
+        <class-b>net.hrkac.examples.jaxb.dozer.generated.PersonMessage</class-b>
     </mapping>
 
 </mappings>
